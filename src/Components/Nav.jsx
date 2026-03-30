@@ -23,7 +23,7 @@ const Nav = () => {
                 <button className="btn__menu">
                     <FontAwesomeIcon icon="bars" />
                 </button>
-                <li classname="nav__icon">
+                <li className="nav__icon">
                     <a href="/cart" className="nav__link">
                     <FontAwesomeIcon icon="shopping-cart" />
                     </a>
