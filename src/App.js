@@ -1,7 +1,7 @@
 import './App.css';
-import Highlights from './components/Highlights';
-import Landing from './components/Landing';
-import Nav from './components/Nav';
+import Highlights from './Components/Highlights';
+import Landing from './Components/Landing';
+import Nav from './Components/Nav';
 
 function App() {
   return (
