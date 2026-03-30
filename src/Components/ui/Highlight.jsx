@@ -4,7 +4,7 @@ const Highlight = ({ icon }) => {
     return (
          <div className="highlight">
                 <div classname="highlight__img">
-                    <FontAwesomeIcon icon="bolt" />
+                   {icon}
                 </div>
                 <h3 className="highlight__subtitle">Easy and Quick</h3>
               <p className="highlight__para">
