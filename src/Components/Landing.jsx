@@ -8,11 +8,11 @@ const Landing = () => {
         <div className="header__container">
           <div className="header__description">
             <h1>Australia's most awarded online Library platform</h1>
-            <h2>Find your dream book with <span className="purple">Library
-            <a href="#features">
-              <button className="btn">Browse Books</button>
-            </a>
+            <h2>Find your dream book with <span className="purple">Library</span></h2>
         </div> 
+        <a href="#features">
+          <button className="btn">Browse Books</button>
+       </a>
         <figure className="header__img--wrapper">
             <img src={UndrawBooks} alt="" />
         </figure>    
