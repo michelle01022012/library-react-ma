@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import Book from '.Components/Book';
+import Book from './Book';
 
 const Featured = () => {
     return (
