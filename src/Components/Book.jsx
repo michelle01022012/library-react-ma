@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from "react";
-import Book from './Book';
-import data from '..data';
+import { data } from '../data';
 
 const Book = () =>  {
     return (
