@@ -3,6 +3,7 @@ import Highlights from './Components/Highlights';
 import Landing from './Components/Landing';
 import Nav from './Components/Nav';
 import Featured from './Components/Featured';
+import Discounted from './Components/Discounted';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Landing />
       <Highlights />
       <Featured />
+      <Discounted />
     </div>
   );
 }
