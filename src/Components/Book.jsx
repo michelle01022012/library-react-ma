@@ -4,7 +4,7 @@ import { data } from '../data';
 
   const Book = ({ book }) => {
     return (
-        <div className="book">
+            <div className="book">
                 <a href="">
                    <figure className="book__img--wrapper">
                        <img src={book.url}

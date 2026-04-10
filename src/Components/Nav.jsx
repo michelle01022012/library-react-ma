@@ -34,7 +34,7 @@ const Nav = () => {
                     <a href="/cart" className="nav__link">
                     <FontAwesomeIcon icon="shopping-cart" />
                     </a>
-                    <span className="cart_length">3</span>
+                    <span className="cart_length">2</span>
                 </li>
             </ul>
             <div className="menu__backdrop">
