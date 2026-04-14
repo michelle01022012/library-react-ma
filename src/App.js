@@ -6,6 +6,7 @@ import Home from "./Components/Home";
 import Books from "./Components/Books";
 import { Switch } from "react-router-dom/cjs/react-router-dom.min";
 import { books } from "./data";
+import BookInfo from "./Components/BookInfo";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         <Route
           path="/books"
           render={() => <Books books={books} />}/>
-          <Route path="/books/1" render={() => <BookInfo books={books} />} />
+          <Route path="/books/:id" render={() => <BookInfo books={books} />} />
         </Switch>
         {/* <Home /> */}
         <Footer />
