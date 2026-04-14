@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { books } from "../data";
 import Book from "./Book";
 
 
@@ -28,8 +27,8 @@ const Books = ({ books: initialBooks }) => {
           <div className="books__container">
             <div className="row">
               <div className="books__header"></div>
-              <h2 class="section__title books__header--title">All Books</h2>
-              <select id="filter"defaultValue="DEFAULT" onChange={(event) => filterBooks(event.target.value)}>
+              <h2 className="section__title books__header--title">All Books</h2>
+              <select id="filter" defaultValue="DEFAULT" onChange={(event) => filterBooks(event.target.value)}>
                 <option value="DEFAULT" disabled>
                   Sort
                 </option>
