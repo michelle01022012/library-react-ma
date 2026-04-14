@@ -5,9 +5,20 @@ import Book from "./Book";
 
 const Books = ({ books: initialBooks }) => {
   const [books, setBooks] = useState(initialBooks);
-  function filterBooks(filter) {}
+  function filterBooks(filter) {
   if (filter === 'LOW_TO_HIGH') {
-    books.sort((a,b) => (a.salePrice || a.originalPrice) - (b.salePrice || b.original))
+    setBooks(
+      books
+      .slice().sort((a, b) => (a.salePrice || a.originalPrice) - (b.salePrice || b.originalPrice)))
+     }   
+  
+  if (filter === 'HIGH_TO_LOW') {
+    setBooks(
+      books
+      .slice().sort((a, b) => (b.salePrice || b.originalPrice) - (a.salePrice || a.originalPrice)))
+  }
+  if (filter === "RATING") {
+    setBooks(books.slice().sort((a, b) => b.rating - a.rating))
   }
 }
   return (
