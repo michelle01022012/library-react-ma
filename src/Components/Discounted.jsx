@@ -1,6 +1,6 @@
-import React from 'react'
-import { books } from '../data'
-import Book from "./Book"
+import React from "react";
+import { books } from "../data";
+import Book from "./Book";
 
 const Discounted = () => {
   return (
@@ -9,18 +9,18 @@ const Discounted = () => {
         <div className="row">
           <h2 className="section__title">
             Discount <span className="purple">Books</span>
-            </h2>  
-      <div className="books">
-        {books
-         .filter(book => book.salePrice >0)
-         .slice(0, 8)
-         .map((book) => (
-         <Book book={book} key={book.id} />
-        ))}
+          </h2>
+          <div className="books">
+            {books
+              .filter((book) => book.salePrice > 0)
+              .slice(0, 8)
+              .map((book) => (
+                <Book book={book} key={book.id} />
+              ))}
+          </div>
+        </div>
       </div>
-    </div>
-   </div> 
-   </section>
+    </section>
   );
 };
 

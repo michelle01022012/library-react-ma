@@ -1,5 +1,5 @@
-import React from 'react';
-import Highlight from './Highlight';
+import React from "react";
+import Highlight from "./Highlight";
 
 const Highlights = () => {
   return (
@@ -10,7 +10,6 @@ const Highlights = () => {
             Why choose <span className="purple">Library</span>
           </h2>
           <div className="highlight__wrapper">
-
             {/* Just use the stamp 3 times with different info */}
             <Highlight
               icon="bolt"
@@ -27,12 +26,11 @@ const Highlights = () => {
               title="Affordable"
               para="Get your hands on popular books for as little as $10."
             />
-
           </div>
         </div>
       </div>
     </section>
   );
-}
+};
 
 export default Highlights;

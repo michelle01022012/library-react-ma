@@ -1,5 +1,5 @@
-import React from 'react';
-import UndrawBooks from '../assets/Undraw_Books.svg';
+import React from "react";
+import UndrawBooks from "../assets/Undraw_Books.svg";
 
 const Landing = () => {
   return (
@@ -8,18 +8,20 @@ const Landing = () => {
         <div className="header__container">
           <div className="header__description">
             <h1>Australia's most awarded online Library platform</h1>
-            <h2>Find your dream book with <span className="purple">Library</span></h2>
-        </div> 
-        <a href="#features">
-          <button className="btn">Browse Books</button>
-       </a>
-        <figure className="header__img--wrapper">
+            <h2>
+              Find your dream book with <span className="purple">Library</span>
+            </h2>
+          </div>
+          <a href="#features">
+            <button className="btn">Browse Books</button>
+          </a>
+          <figure className="header__img--wrapper">
             <img src={UndrawBooks} alt="" />
-        </figure>    
+          </figure>
         </div>
       </header>
     </section>
   );
-}
+};
 
 export default Landing;

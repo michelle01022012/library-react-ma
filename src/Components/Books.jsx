@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { books } from "../data";
 import Book from "./Book";
 
-const Books = () => {
+
+const Books = ({ books: initialBooks }) => {
+  const [books, setBooks] = useState(initialBooks);
+  function filterBooks(filter) {}
+  if (filter === 'LOW_TO_HIGH') {
+    books.sort((a,b) => (a.salePrice || a.originalPrice) - (b.salePrice || b.original))
+  }
+}
   return (
     <div id="books__body">
       <main id="books__main">
@@ -11,8 +18,8 @@ const Books = () => {
             <div className="row">
               <div className="books__header"></div>
               <h2 class="section__title books__header--title">All Books</h2>
-              <select id="filter">
-                <option value="" selected disabled>
+              <select id="filter"defaultValue="DEFAULT" onChange={(event) => filterBooks(event.target.value)}>
+                <option value="DEFAULT" disabled>
                   Sort
                 </option>
                 <option value="LOW_TO_HIGH">Price Low to High</option>

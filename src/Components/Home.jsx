@@ -3,7 +3,8 @@ import Discounted from "./Discounted";
 import Explore from "./Explore";
 import Featured from "./Featured";
 import Highlights from "./Highlights";
-import Landing from "./Landing";
+import Landing from './Landing';
+
 
 const Home = () => {
   return (

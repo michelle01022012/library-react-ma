@@ -1,18 +1,24 @@
 import "./App.css";
-import Footer from "./components/Footer";
-import Nav from "./components/Nav";
+import Footer from "./Components/Footer";
+import Nav from "./Components/Nav";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Home from "./components/Home";
-import Books from "./components/Books";
+import Home from "./Components/Home";
+import Books from "./Components/Books";
+import { Switch } from "react-router-dom/cjs/react-router-dom.min";
+import { books } from "./data";
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Nav />
-        <Route path="/" exact component={Home} />
-        <Route path="/books" component={Books} />
-        <Home />
+        <Switch>
+          <Route path="/" exact component={Home} />
+        <Route
+          path="/books"
+          render={() => <Books books={books} />}/>
+        </Switch>
+        {/* <Home /> */}
         <Footer />
       </div>
     </Router>
