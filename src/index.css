@@ -240,6 +240,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
 }
 
 .header__description {
@@ -511,7 +512,7 @@ BOOKS PAGE
 
 .books__header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   padding: 0 24px;
 }
