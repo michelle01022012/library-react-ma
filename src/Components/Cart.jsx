@@ -12,12 +12,14 @@ const Cart = ({ cart, changeQuantity, removeItem }) => {
       <div id="books__body">
         <main id="books__main">
           <div className="books__container">
+           <div className="row">
             <div className="cart__empty">
               <h2>Your cart is empty</h2>
               <Link to="/books">
                 <button className="btn">Browse Books</button>
               </Link>
             </div>
+          </div>
           </div>
         </main>
       </div>
@@ -28,6 +30,7 @@ const Cart = ({ cart, changeQuantity, removeItem }) => {
     <div id="books__body">
       <main id="books__main">
         <div className="books__container">
+          <div className="row">
           <div className="cart">
             <div className="cart__header">
               <h2>Cart</h2>
@@ -75,6 +78,7 @@ const Cart = ({ cart, changeQuantity, removeItem }) => {
                 <button className="btn">Checkout</button>
               </Link>
             </div>
+          </div>
           </div>
         </div>
       </main>
