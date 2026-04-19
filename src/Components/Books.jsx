@@ -37,12 +37,12 @@ const Books = ({ books: initialBooks }) => {
                   <option value="RATING">Rating</option>
                 </select>
               </div>
-            </div>
-            <div className="books">
+              <div className="books">
               {books.map((book) => (
                 <Book book={book} key={book.id} />
               ))}
             </div>
+           </div> 
           </div>
         </section>
       </main>
