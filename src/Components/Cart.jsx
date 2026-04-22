@@ -19,7 +19,7 @@ const Cart = ({ cart, changeQuantity, removeItem }) => {
                 <button className="btn">Browse Books</button>
               </Link>
             </div>
-          </div>
+           </div>
           </div>
         </main>
       </div>
